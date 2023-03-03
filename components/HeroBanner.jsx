@@ -11,6 +11,14 @@ const HeroBanner = ( heroBanner ) => {
 
     <div className="hero-banner-container">
       <div>
+
+        <img 
+          src={urlFor(heroBanner?.HeroBanner?.image)}
+          alt="headphones"
+          className="hero-banner-image"
+                       
+        />
+
         <p className="beats-solo">
           {heroBanner?.HeroBanner?.smallText}
         </p>
@@ -20,7 +28,7 @@ const HeroBanner = ( heroBanner ) => {
         <h1>
           {heroBanner?.HeroBanner?.largeText1}
         </h1>
-        <img src={urlFor(heroBanner?.HeroBanner?.image)} alt="headphones" className="hero-banner-image" />
+        
 
         <div>
           <Link href={`/product/${heroBanner?.HeroBanner?.product}`}>
@@ -30,7 +38,7 @@ const HeroBanner = ( heroBanner ) => {
           </Link>
 
           <div className="desc">
-            <h5>Description</h5>
+            <h5>Best Brand Sneakers on the Market is here! Hurry Up to Buy it with huge Discount!</h5>
             <p>{heroBanner?.HeroBanner?.desc}</p>
           </div>
         </div>

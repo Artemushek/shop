@@ -14,7 +14,7 @@ const FooterBanner = ( footerBanner ) => {
           <p>{footerBanner?.FooterBanner?.discount}</p>
           <h3>{footerBanner?.FooterBanner?.largeText1}</h3>
           <h3>{footerBanner?.FooterBanner?.largeText2}</h3>
-          <p>{footerBanner?.FooterBanner?.saleTime}</p>
+          <p className="left2">{footerBanner?.FooterBanner?.saleTime}</p>
         </div>
         <div className="right">
           <p>{footerBanner?.FooterBanner?.smallText}</p>
@@ -27,12 +27,11 @@ const FooterBanner = ( footerBanner ) => {
             </button>
           </Link>
         </div>
-
         <img
           src={urlFor(footerBanner?.FooterBanner?.image)}
           className="footer-banner-image"
-        />
-      </div>
+        />        
+      </div>     
     </div>
   )
 }
